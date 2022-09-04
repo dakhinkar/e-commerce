@@ -1,0 +1,95 @@
+.cartContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+    /* flex-grow: inherit; */
+}
+
+.cardContainer{
+    width: 60%;
+    /* margin-bottom: 1rem;
+    gap: 1rem; */
+    /* border: 1px solid black; */
+}
+.summary{
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    flex-wrap: wrap;
+}
+.summaryHeading{
+    font-size: 1.5rem;
+    font-weight: 700; 
+}
+.subdetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.subdetails :nth-child(1){
+    font-size: 1rem;
+    font-weight: 400;
+}
+.subTotals{
+    font-weight: 700;
+}
+
+/* Card */
+.card{
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+/* .itemImage{
+    width: 20%;
+} */
+.itemImage img{
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+}
+.details{
+    width: 80%;
+    /* min-height: 20vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    gap: 1rem;
+
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.heading svg{
+    width: 1rem;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.heading svg:hover{
+    width: 1.25rem;
+}
+
+@media screen and (max-width: 820px) {
+    .cardContainer, .summary{
+        width: 100%;
+    }
+}

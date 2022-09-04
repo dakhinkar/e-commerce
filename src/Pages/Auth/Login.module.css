@@ -1,0 +1,93 @@
+.container{
+    background-color: seashell;
+    /* margin: 30% 30%; */
+    /* text-align: center;
+    vertical-align: middle; */
+    max-width: max-content;
+    margin: 5rem auto;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+.container h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+.container div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1rem;
+}
+.container div label{
+    font-weight: 600;
+}
+.container div input{
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: left;
+    padding: 3px;
+}
+.action{
+    justify-content: center;
+    align-items: center;
+}
+
+.container div button{
+    min-width: 6rem;
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.loginHover:hover{
+    font-size: 1.15rem;
+}
+.forgotHover:hover {
+    font-size: 1.15rem;
+}
+.container div a{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+ @media screen and (max-width: 280px) {
+    /* .container {
+        padding: 0.1rem;
+    } */
+ 
+    .container div {
+        gap: 0.5rem;
+        margin: 1rem 0.2rem;
+    }
+
+    .container div input {
+        width: 10rem;
+    }
+
+    .container div botton {
+        min-width: 4rem;
+        padding: 5px;
+    }
+
+    
+} 
+
+@media screen and (max-width: 812px) {
+    .container{
+        padding: 0.7rem;
+    }
+    .container div{
+        gap: 1rem
+    }
+}
+

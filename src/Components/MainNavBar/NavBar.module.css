@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    margin: 0 15px;
+    gap: 2rem;
+}
+
+.logo h1{
+    background-color: blue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: yellow;
+}
+.rightSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.6rem;
+}
+.loginButton{
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.loginButton a{
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.35rem;
+    width: max-content;
+    flex-wrap: wrap;
+}
+.loginButton a span{
+    /* margin-top: 0.5rem; */
+    width: 5.75rem;
+    font-size: 0.75rem;
+    word-wrap: break-word;
+}
+.loginButton a svg{
+    width: 1.5rem;
+}
+/* .loginButton svg{
+    display: inline;
+    
+} */
+
+.cartButton, .favButton{
+    font-size: 1.5rem;
+    width: 30px;
+}
+
+
