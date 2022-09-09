@@ -2,7 +2,12 @@ import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
 import { HeartIcon, ShoppingCartIcon, UserCircleIcon, ChevronDownIcon } from '@heroicons/react/solid';
 
+import AuthContext from '../../Context/AuthContext';
+import { useContext } from 'react';
+
 const NavBar = () => {
+    const authCxt = useContext(AuthContext);
+    const isLogin = authCxt.isLoggedIn;
     return (
         <div className={styles.container}>
             <div className={styles.logo} >
@@ -11,7 +16,8 @@ const NavBar = () => {
                 </Link>
             </div>
             <div className={styles.rightSide}>
-                <div className={styles.loginButton} >
+
+                {!isLogin && <div className={styles.loginButton} >
                     <Link to='/auth' >
 
                         <UserCircleIcon />
@@ -20,16 +26,20 @@ const NavBar = () => {
 
                     </Link>
                 </div>
-                <div className={styles.favButton}>
+                }
+                {isLogin && <div className={styles.favButton}>
                     <Link to='/favrioute'>
                         <HeartIcon />
                     </Link>
                 </div>
-                <div className={styles.cartButton}>
+                }
+                {isLogin && <div className={styles.cartButton}>
                     <Link to='/mycart/' >
                         <ShoppingCartIcon />
                     </Link>
                 </div>
+                }
+                {isLogin && <button className={styles.logout} onClick={authCxt.logout}>Logout</button>}
             </div>
         </div>
     );

@@ -18,7 +18,7 @@ const Navbar = () => {
         </>
         {
             categories && categories.map(i=>(
-                <div>
+                <div key={i.toString()}>
                     <Link to={`/${i}`} className={styles.categoryLink}>
                         <h1 className='truncate capitalize mx-4' onClick={()=>setCategory(i)}>{i}</h1>
                     </Link>

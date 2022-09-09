@@ -21,24 +21,25 @@
     justify-content: space-around;
     align-items: center;
     gap: 0.6rem;
+    font-weight: bold;
 }
 .loginButton{
-    border: 1px solid black;
-    padding: 0.5rem;
-    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0.4rem;
+    border-radius: 8px;
 }
 .loginButton a{
 
     display: flex;
     flex-direction: row;
-    gap: 0.35rem;
+    gap: 0.3rem;
     width: max-content;
     flex-wrap: wrap;
 }
 .loginButton a span{
     /* margin-top: 0.5rem; */
     width: 5.75rem;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     word-wrap: break-word;
 }
 .loginButton a svg{
@@ -54,4 +55,13 @@
     width: 30px;
 }
 
-
+.logout{
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+.logout:hover{
+    background-color: brown;
+}

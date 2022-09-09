@@ -49,10 +49,11 @@
 }
 
 .loginHover:hover{
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
+    background-color: blue;
 }
 .forgotHover:hover {
-    font-size: 1.15rem;
+background-color: blue;
 }
 .container div a{
     text-decoration: underline;
